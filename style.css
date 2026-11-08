@@ -1,0 +1,11 @@
+:root{font-family:Arial,"Noto Sans Devanagari",sans-serif;color:#172033;background:#f3f6fb}
+*{box-sizing:border-box}body{margin:0}.hero{background:linear-gradient(120deg,#082b62,#0878b9);color:white;text-align:center;padding:38px 16px 32px}
+.brand{font-weight:800;letter-spacing:2px;font-size:20px}.hero h1{font-size:clamp(28px,5vw,46px);margin:12px 0}.hero p{font-size:18px;margin:8px}.contact{margin-top:18px;font-size:14px}
+main{max-width:900px;margin:28px auto;padding:0 16px}.intro{text-align:center;margin-bottom:22px}.intro h2,.steps h2{color:#073b78}
+.panel,.steps{background:white;border-radius:16px;padding:24px;box-shadow:0 8px 30px #102b4c12}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:flex;flex-direction:column;gap:7px;font-weight:600;font-size:14px}.wide{grid-column:1/-1}
+input,select,textarea{font:inherit;border:1px solid #ccd5e2;border-radius:8px;padding:12px;background:#fff;width:100%}
+button{margin-top:20px;background:#0878b9;color:white;border:0;border-radius:9px;padding:14px 22px;font-size:16px;font-weight:700;cursor:pointer;width:100%}
+button:hover{background:#075b91}#message{font-weight:700}.steps{margin-top:22px}.stepgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stepgrid div{background:#eef6fc;padding:15px;border-radius:10px}.stepgrid b,.stepgrid span{display:block}.stepgrid span{font-size:13px;margin-top:8px}
+footer{text-align:center;padding:24px;color:#64748b;font-size:13px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.stepgrid{grid-template-columns:1fr 1fr}.panel{padding:17px}}

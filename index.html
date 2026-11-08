@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="mr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio S Media | Online Scan & Print</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="brand">🎬 STUDIO S MEDIA</div>
+  <h1>ONLINE SCAN & PRINT</h1>
+  <p>घरबसल्या कागदपत्रे अपलोड करा • प्रिंट ऑर्डर द्या</p>
+  <div class="contact">पोहरा बंदी, ता. जि. अमरावती – ४४४९०४ | मो. 8788748422</div>
+</header>
+<main>
+  <section class="intro">
+    <h2>ऑनलाइन प्रिंट ऑर्डर</h2>
+    <p>PDF, JPG किंवा PNG फाइल अपलोड करा. तुमची ऑर्डर दुकानातून तपासल्यानंतरच प्रिंट केली जाईल.</p>
+  </section>
+  <form id="orderForm" class="panel">
+    <div class="grid">
+      <label>पूर्ण नाव *<input name="name" required placeholder="तुमचे नाव"></label>
+      <label>मोबाईल नंबर *<input name="phone" required inputmode="tel" pattern="[0-9+\-\s]{10,15}" placeholder="मोबाईल नंबर"></label>
+      <label class="wide">पत्ता<input name="address" placeholder="गाव / परिसर"></label>
+      <label>प्रिंट प्रकार
+        <select name="printType"><option>Black & White</option><option>Colour</option></select>
+      </label>
+      <label>प्रती संख्या<input name="copies" type="number" min="1" max="500" value="1"></label>
+      <label>पाने
+        <select name="pages"><option value="All">सर्व पाने</option><option value="Front only">फक्त पुढील बाजू</option><option value="Both sides">दोन्ही बाजू (दुकानातून पुष्टी)</option></select>
+      </label>
+      <label>पेमेंट पद्धत
+        <select name="payment"><option>दुकानात पैसे</option><option>UPI — दुकानातून QR मिळेल</option><option>Online payment — सुरू होणे बाकी</option></select>
+      </label>
+      <label class="wide">फाइल अपलोड करा * <input name="documents" type="file" accept=".pdf,.jpg,.jpeg,.png" multiple required></label>
+      <small class="wide">कमाल ५ फाइल्स • प्रत्येक फाइल २० MB पर्यंत • PDF/JPG/PNG</small>
+      <label class="wide">विशेष सूचना<textarea name="notes" rows="3" placeholder="उदा. पान क्रमांक, पेपर साईज, तातडीची ऑर्डर"></textarea></label>
+    </div>
+    <button type="submit">ऑर्डर सबमिट करा</button>
+    <p id="message" role="status"></p>
+  </form>
+  <section class="steps">
+    <h2>ऑर्डर कशी पूर्ण होईल?</h2>
+    <div class="stepgrid">
+      <div><b>१. अपलोड</b><span>कागदपत्रे अपलोड करा.</span></div>
+      <div><b>२. तपासणी</b><span>दुकानातून फाइल व तपशील तपासले जातील.</span></div>
+      <div><b>३. प्रिंट</b><span>मंजुरीनंतर प्रिंट काढली जाईल.</span></div>
+      <div><b>४. पेमेंट</b><span>दुकानात किंवा ठरलेल्या UPI पद्धतीने पैसे द्या.</span></div>
+    </div>
+  </section>
+</main>
+<footer>© Studio S Media • संपर्क: 8788748422</footer>
+<script src="app.js"></script>
+</body></html>
