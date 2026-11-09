@@ -1,7 +1,105 @@
+
 <!doctype html>
-<html lang="mr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Studio S Media - Admin</title><link rel="stylesheet" href="style.css"></head>
-<body><header class="hero"><div class="brand">STUDIO S MEDIA</div><h1>ऑर्डर व्यवस्थापन</h1><p>Admin / Print Desk</p></header>
-<main><section class="panel">
-<label>प्रशासक पासवर्ड<input id="password" type="password" placeholder="Admin password"></label>
-<button id="load">ऑर्डर दाखवा</button><p id="adminMsg"></p><div id="orders"></div>
-</section></main><script src="admin.js"></script></body></html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Studio S Media - Admin</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .admin-wrap {
+      max-width: 950px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+
+    .admin-panel {
+      background: white;
+      padding: 18px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      overflow-wrap: anywhere;
+    }
+
+    .admin-panel button,
+    .admin-panel select,
+    .admin-panel input {
+      margin: 6px 5px 6px 0;
+      padding: 10px;
+      max-width: 100%;
+    }
+
+    .admin-panel button {
+      cursor: pointer;
+    }
+
+    .file-item {
+      margin: 12px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      list-style: none;
+    }
+
+    .print-btn {
+      background: #167a36;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+    }
+
+    .download-btn {
+      background: #1558a6;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+    }
+
+    .status-msg {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .file-status {
+      margin-top: 7px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="brand">STUDIO S MEDIA</div>
+    <h1>ऑर्डर व्यवस्थापन</h1>
+    <p>Admin / Print Desk</p>
+  </header>
+
+  <main class="admin-wrap">
+
+    <section class="admin-panel">
+      <h2>प्रशासक लॉगिन</h2>
+
+      <label for="password">प्रशासक पासवर्ड</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Admin password"
+        autocomplete="current-password"
+      >
+
+      <button id="load" type="button">
+        ऑर्डर दाखवा
+      </button>
+
+      <p id="adminMsg" class="status-msg" aria-live="polite"></p>
+      <div id="orders"></div>
+    </section>
+
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
